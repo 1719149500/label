@@ -1,0 +1,70 @@
+cmake_minimum_required(VERSION 3.16)
+
+# 添加这行指定源文件编码
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8")
+
+# 鎸囧畾缂栬瘧鍣�
+set(CMAKE_C_COMPILER "F:/AsOneFile/Qt/Tools/mingw1120_64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "F:/AsOneFile/Qt/Tools/mingw1120_64/bin/g++.exe")
+
+project(label2 VERSION 0.1 LANGUAGES CXX)
+
+# Qt璁剧疆
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+# 璁剧疆Qt璺緞 - 纭繚杩欎釜璺緞姝ｇ‘
+set(CMAKE_PREFIX_PATH "F:/AsOneFile/Qt/6.6.3/mingw_64")
+
+# 璁剧疆C++鏍囧噯
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+
+# 鏌ユ壘Qt鍖�
+find_package(QT NAMES Qt6 Qt5 REQUIRED COMPONENTS Widgets)
+find_package(Qt${QT_VERSION_MAJOR} REQUIRED COMPONENTS Widgets)
+
+# 璁剧疆婧愭枃浠�
+set(PROJECT_SOURCES
+    main.cpp
+    mainwindow.cpp
+    mainwindow.h
+    mainwindow.ui
+)
+
+# 鍒涘缓鍙墽琛屾枃浠�
+qt_add_executable(label2
+    MANUAL_FINALIZATION
+    ${PROJECT_SOURCES}
+    resources.qrc
+)
+
+# 閾炬帴Qt搴�
+target_link_libraries(label2 PRIVATE Qt${QT_VERSION_MAJOR}::Widgets)
+
+# Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
+# If you are developing for iOS or macOS you should consider setting an
+# explicit, fixed bundle identifier manually though.
+if(${QT_VERSION} VERSION_LESS 6.1.0)
+  set(BUNDLE_ID_OPTION MACOSX_BUNDLE_GUI_IDENTIFIER com.example.label2)
+endif()
+set_target_properties(label2 PROPERTIES
+    ${BUNDLE_ID_OPTION}
+    MACOSX_BUNDLE_BUNDLE_VERSION ${PROJECT_VERSION}
+    MACOSX_BUNDLE_SHORT_VERSION_STRING ${PROJECT_VERSION_MAJOR}.${PROJECT_VERSION_MINOR}
+    MACOSX_BUNDLE TRUE
+    WIN32_EXECUTABLE TRUE
+)
+
+include(GNUInstallDirs)
+install(TARGETS label2
+    BUNDLE DESTINATION .
+    LIBRARY DESTINATION ${CMAKE_INSTALL_LIBDIR}
+    RUNTIME DESTINATION ${CMAKE_INSTALL_BINDIR}
+)
+
+# 鏈€鍚庡啀璋冪敤finalize
+if(QT_VERSION_MAJOR EQUAL 6)
+    qt_finalize_executable(label2)
+endif()

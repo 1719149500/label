@@ -1,0 +1,26 @@
+{
+    "files.encoding": "utf8bom",
+    "cmake.generator": "MinGW Makefiles",
+    "cmake.cmakePath": "F:/AsOneFile/cmake3.30.5/bin/cmake.exe",
+    "cmake.configureSettings": {
+        "CMAKE_C_COMPILER": "F:/AsOneFile/Qt/Tools/mingw1120_64/bin/gcc.exe",
+        "CMAKE_CXX_COMPILER": "F:/AsOneFile/Qt/Tools/mingw1120_64/bin/g++.exe",
+        "CMAKE_PREFIX_PATH": "F:/AsOneFile/Qt/6.6.3/mingw_64"
+    },
+    "cmake.buildDirectory": "${workspaceFolder}/build",
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.configureArgs": [
+        "-DCMAKE_BUILD_TYPE=Debug"
+    ],
+    "cmake.buildArgs": [],
+    "cmake.buildToolArgs": [],
+    "cmake.parallelJobs": 4,
+    "cmake.loggingLevel": "DEBUG",
+    "files.associations": {
+        "*.h": "cpp",
+        "*.cpp": "cpp"
+    },
+    "terminal.integrated.env.windows": {
+        "PATH": "${env:PATH};F:/AsOneFile/Qt/Tools/mingw1120_64/bin"
+    }
+}

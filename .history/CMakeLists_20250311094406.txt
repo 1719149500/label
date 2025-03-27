@@ -1,0 +1,48 @@
+﻿您的CMakeLists.txt文件中的中文注释显示为乱码，这是因为文件编码和解析之间存在不匹配。这里有几个可能的原因和解决方案：
+
+1. **文件编码问题**：
+   虽然您认为文件是UTF-8编码的，但实际上可能是其他编码（如GB2312或GBK）。
+
+2. **BOM标记问题**：
+   UTF-8文件可能缺少BOM（字节顺序标记）。
+
+3. **CMake处理问题**：
+   CMake在处理非ASCII字符时可能有特殊要求。
+
+解决方案：
+
+```cmake:CMakeLists.txt
+# 在文件最开头添加这行，确保CMake正确处理UTF-8
+cmake_minimum_required(VERSION 3.16)
+
+# 添加这行指定源文件编码
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -finput-charset=UTF-8")
+
+# 指定编译器
+set(CMAKE_C_COMPILER "F:/AsOneFile/Qt/Tools/mingw1120_64/bin/gcc.exe")
+set(CMAKE_CXX_COMPILER "F:/AsOneFile/Qt/Tools/mingw1120_64/bin/g++.exe")
+
+project(label2 VERSION 0.1 LANGUAGES CXX)
+// ... existing code ...
+```
+
+如果上述方法不起作用，请尝试：
+
+1. **重新保存文件**：
+   - 在编辑器中打开CMakeLists.txt
+   - 选择"另存为"
+   - 明确选择UTF-8编码（带BOM）
+   - 覆盖原文件
+
+2. **使用英文注释**：
+   如果只是为了避免乱码，可以暂时使用英文注释
+
+3. **检查编辑器设置**：
+   确保您的代码编辑器默认使用UTF-8编码
+
+4. **检查Qt Creator设置**：
+   - 打开Qt Creator
+   - 转到Tools -> Options -> Text Editor -> Behavior
+   - 确保"Default Encoding"设置为"UTF-8"
+
+这些方法应该能解决中文显示问题。如果问题仍然存在，可能需要检查您的系统区域设置和Qt的国际化配置。
