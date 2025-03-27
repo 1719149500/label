@@ -3,25 +3,38 @@
 #include <iostream>
 #include <string>
 #include <vector>
-#include <QDebug>
-#include <QString>
-#include <QFile>
-/*  */
+
+/* 构造函数 */
 MyImage::MyImage(const std::string& image_path)
     : image_path(image_path),
     image_mat(cv::imread(image_path)),
     binary(image_mat),
-    filter(image_mat) {}
+    filter(image_mat),
+    image_width(image_mat.rows),
+    image_height(image_mat.cols)
+{}
 
 
-/*  */
+/* 仅用于测试 */
 void MyImage::show() {
     cv::imshow("Test result", image_mat);
     int k = cv::waitKey(0); // Wait for a keystroke in the window
 }
 
 
-/*  */
+/* 函数的具体实现 */
+std::string MyImage::getImagePath() {
+    return image_path;
+};
+
+int MyImage::getWidth() {
+    return image_width;
+}
+
+int MyImage::getHeight() {
+    return image_height;
+}
+
 
 
 void MyImage::exportImage(std::string outputPath) {
@@ -87,28 +100,43 @@ void MyImage::convertColorDepth(ColorDepth color_depth) {
         if (image_mat.channels() == 3 || image_mat.channels() == 4) {
             cv::cvtColor(image_mat, image_mat, cv::COLOR_BGR2GRAY);
         }
-        image_mat.convertTo(image_mat, CV_8U);
+        if (image_mat.depth() == CV_16U) {
+            image_mat.convertTo(image_mat, CV_8U, 1.0 / 256.0);
+        }
+        else if (image_mat.depth() == CV_32F) {
+            image_mat.convertTo(image_mat, CV_8U, 255.0);
+        }
         break;
 
     case k16BitGrayscale:
         if (image_mat.channels() == 3 || image_mat.channels() == 4) {
             cv::cvtColor(image_mat, image_mat, cv::COLOR_BGR2GRAY);
         }
-        image_mat.convertTo(image_mat, CV_16U);
+        if (image_mat.depth() == CV_8U) {
+            image_mat.convertTo(image_mat, CV_16U, 256.0);
+        }
+        else {
+            image_mat.convertTo(image_mat, CV_16U);
+        }
         break;
 
     case k32BitGrayscale:
         if (image_mat.channels() == 3 || image_mat.channels() == 4) {
             cv::cvtColor(image_mat, image_mat, cv::COLOR_BGR2GRAY);
         }
-        image_mat.convertTo(image_mat, CV_32F, 1.0 / 255.0);  //  [0, 1]
+        image_mat.convertTo(image_mat, CV_32F, 1.0 / ((image_mat.depth() == CV_16U) ? 65535.0 : 255.0));
         break;
 
     case k8BitColor:
         if (image_mat.channels() == 1) {
             cv::cvtColor(image_mat, image_mat, cv::COLOR_GRAY2BGR);
         }
-        image_mat.convertTo(image_mat, CV_8U);
+        if (image_mat.depth() == CV_32F) {
+            image_mat.convertTo(image_mat, CV_8U, 255.0);
+        }
+        else if (image_mat.depth() == CV_16U) {
+            image_mat.convertTo(image_mat, CV_8U, 1.0 / 256.0);
+        }
         break;
 
     case kRGBColor:
@@ -117,6 +145,12 @@ void MyImage::convertColorDepth(ColorDepth color_depth) {
         }
         else if (image_mat.channels() == 4) {
             cv::cvtColor(image_mat, image_mat, cv::COLOR_BGRA2BGR);
+        }
+        if (image_mat.depth() == CV_32F) {
+            image_mat.convertTo(image_mat, CV_8U, 255.0);
+        }
+        else if (image_mat.depth() == CV_16U) {
+            image_mat.convertTo(image_mat, CV_8U, 1.0 / 256.0);
         }
         break;
     }
@@ -130,56 +164,56 @@ contrast: [-127, 127]
 brightness: [-127, 127]
 */
 void MyImage::setBrightnessContrast(int minimum, int maximum, double contrast, double brightness) {
-    // �ަ�
+    // 计算中间值和范围，用于调整对比度
     double mid = (minimum + maximum) / 2.0;
     double range = (maximum - minimum) / 2.0 / (contrast > 0 ? contrast : 1);
 
-    // �ަ���
+    // 根据中间值和范围重新计算最小值和最大值
     minimum = static_cast<int>(mid - range);
     maximum = static_cast<int>(mid + range);
 
-    // ����-5000  5000
+    // 限制最小值和最大值在合理范围内（-5000 到 5000）
     minimum = std::max(-5000, std::min(minimum, 5000));
     maximum = std::max(-5000, std::min(maximum, 5000));
     if (minimum >= maximum) {
-        std::swap(minimum, maximum); // ��
+        std::swap(minimum, maximum); // 如果最小值大于最大值，交换两者
     }
 
     cv::Mat adjusted;
-    image_mat.convertTo(adjusted, CV_32F); //  float ��
+    image_mat.convertTo(adjusted, CV_32F); // 转换为 float 进行计算
 
-    //
+    // 应用对比度调整公式
     adjusted = adjusted * (contrast / 127 + 1) - contrast;
-    // ��
+    // 限制像素值在最小值和最大值之间
     adjusted = cv::max(adjusted, minimum);
     adjusted = cv::min(adjusted, maximum);
-    //  0-255 ��
+    // 将像素值映射到 0-255 范围
     adjusted = (adjusted - minimum) / (maximum - minimum) * 255.0;
-    adjusted.convertTo(adjusted, CV_8U); //  8 ��
+    adjusted.convertTo(adjusted, CV_8U); // 将图像转换回 8 位无符号整型
 
-    //  brightness  LAB  L
+    // 针对 brightness 部分，避免颜色偏移：转换到 LAB 颜色空间，仅修改 L 通道
     if (brightness != 0) {
         cv::Mat lab;
-        cv::cvtColor(adjusted, lab, cv::COLOR_BGR2Lab); //  BGR  LAB
+        cv::cvtColor(adjusted, lab, cv::COLOR_BGR2Lab); // 将图像从 BGR 颜色空间转换到 LAB 颜色空间
         std::vector<cv::Mat> lab_channels;
-        cv::split(lab, lab_channels); //  LAB
+        cv::split(lab, lab_channels); // 分离 LAB 通道
 
-        //  L lab_channels[0]�� 0-255
-        lab_channels[0].convertTo(lab_channels[0], CV_32F); //  L
-        lab_channels[0] += brightness;  //  L  brightness
-        lab_channels[0] = cv::max(lab_channels[0], 0); //  L ��
-        lab_channels[0] = cv::min(lab_channels[0], 255); //  L
-        lab_channels[0].convertTo(lab_channels[0], CV_8U); //  L  8 ��
+        // 调整 L 通道（lab_channels[0]），其范围为 0-255
+        lab_channels[0].convertTo(lab_channels[0], CV_32F); // 将 L 通道转换为浮点型
+        lab_channels[0] += brightness;  // 仅在 L 通道上加上 brightness 偏移
+        lab_channels[0] = cv::max(lab_channels[0], 0); // 限制 L 通道最小值
+        lab_channels[0] = cv::min(lab_channels[0], 255); // 限制 L 通道最大值
+        lab_channels[0].convertTo(lab_channels[0], CV_8U); // 将 L 通道转换回 8 位无符号整型
 
-        cv::merge(lab_channels, lab); //  LAB
-        cv::cvtColor(lab, adjusted, cv::COLOR_Lab2BGR); //  LAB  BGR
+        cv::merge(lab_channels, lab); // 合并 LAB 通道
+        cv::cvtColor(lab, adjusted, cv::COLOR_Lab2BGR); // 将图像从 LAB 颜色空间转换回 BGR 颜色空间
     }
 
     adjusted.copyTo(image_mat);
 }
 
 void MyImage::threshold(int minimum = 0, int maximum = 255) {
-    if (image_mat.channels() == 1) { //
+    if (image_mat.channels() == 1) { // 仅在灰度图像时执行
         cv::threshold(image_mat, image_mat, minimum, maximum, cv::THRESH_BINARY);
     }
 }
@@ -207,7 +241,7 @@ std::vector<float> MyImage::histogram() {
 
         cv::calcHist(&image_mat, 1, 0, cv::Mat(), hist, 1, &histSize, &histRange);
 
-        //  cv::Mat  std::vector<float>
+        // 转换 cv::Mat 为 std::vector<float>
         histogramData.assign(hist.begin<float>(), hist.end<float>());
     }
 
@@ -231,20 +265,19 @@ std::vector<float> MyImage::plotProfile(const cv::Mat& mask) {
     return profile;
 }
 
-
 void MyImage::updateImage(const std::string& newImagePath) {
-    // ��ӡ·��
+    // ???·??
     qDebug() << "Updating image with path:" << QString::fromStdString(newImagePath);
 
-    // ����·��
+    // ????·??
     image_path = newImagePath;
 
 
 
-    // ����ͼ��
+    // ???????
     image_mat = cv::imread(newImagePath);
 
-    // ���ͼ���Ƿ���سɹ�
+    // ??????????????
     if (image_mat.empty()) {
         qDebug() << "Failed to load image from path:" << QString::fromStdString(newImagePath);
     } else {
@@ -275,3 +308,4 @@ void MyImage::updateSelectedAction(QAction* selectedAction) {
         this->selectedAction->setChecked(true);
     }
 }
+

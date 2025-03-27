@@ -34,6 +34,9 @@ private:
     // 在 MyImage 类中添加成员变量
     QAction* selectedAction;
 
+    int image_width;
+    int image_height;
+
 public:
     BinaryProcessor binary;
     FilterProcessor filter;
@@ -50,6 +53,10 @@ public:
 
     /* 仅用于测试 */
     void show();
+    std::string getImagePath() ;
+
+    int getWidth() ;
+    int getHeight() ;
 
     // 更新图像的方法
     void updateImage(const std::string& newImagePath);

@@ -509,15 +509,18 @@ MainWindow::MainWindow(QWidget *parent)
     QMenu *transformMenu = imageMenu->addMenu(tr("Transform"));
     QAction *flipHorizontallyAction = transformMenu->addAction(tr("Flip Horizontally"));
     QAction *flipVerticallyAction = transformMenu->addAction(tr("Flip Vertically"));
-    QAction *flipZAction = transformMenu->addAction(tr("Flip Z"));
     QAction *rotate90RightAction = transformMenu->addAction(tr("Rotate 90 Degrees Right"));
     QAction *rotate90LeftAction = transformMenu->addAction(tr("Rotate 90 Degrees Left"));
     QAction *rotateAction = transformMenu->addAction(tr("Rotate..."));
-    connect(rotateAction, &QAction::triggered, this, &MainWindow::onRotate);
     QAction *translateAction = transformMenu->addAction(tr("Translate..."));
-    QAction *binAction = transformMenu->addAction(tr("Bin..."));
-    QAction *imageToResultsAction = transformMenu->addAction(tr("Image to Results"));
-    QAction *resultsToImageAction = transformMenu->addAction(tr("Results to Image"));
+    // 连接 Transform 菜单项的信号与槽
+    connect(flipHorizontallyAction, &QAction::triggered, this, &MainWindow::onFlipHorizontally);
+    connect(flipVerticallyAction, &QAction::triggered, this, &MainWindow::onFlipVertically);
+    connect(rotate90RightAction, &QAction::triggered, this, &MainWindow::onRotate90Right);
+    connect(rotate90LeftAction, &QAction::triggered, this, &MainWindow::onRotate90Left);
+    connect(rotateAction, &QAction::triggered, this, &MainWindow::onRotate);
+    connect(translateAction, &QAction::triggered, this, &MainWindow::onTranslate);
+
 
 
     QAction *zoomAction = new QAction(tr("Zoom"), this);
@@ -1536,16 +1539,7 @@ void MainWindow::onPlotProfile()
 
 
 
-void MainWindow::onRotate() {
-    bool ok;
-    // 获取用户输入的角度值，设置默认值为 12.70，范围从 -360 到 360，小数点后保留两位
-    double angle = QInputDialog::getDouble(this, tr("Rotate"),
-                                           tr("Angle:"), 12.70, -360.0, 360.0, 2, &ok);
-    if (ok) {
-        // 如果用户点击了 OK 按钮，则输出输入的角度值
-        qDebug() << "Rotate by angle:" << angle;
-    }
-}
+
 
 
 void MainWindow::handleScaleRequest(float factor) {
@@ -1588,7 +1582,7 @@ void MainWindow::resetZoom()
 
 void MainWindow::updateImageDisplay() {
     // 将 MyImage 的图像转换为 QPixmap
-    cv::Mat image = myImage.getImageMat(); // 假设 MyImage 提供了一个方法来获取当前的 cv::Mat
+    cv::Mat image = myImage.getImageMat(); // 获取当前的 cv::Mat
 
     // 确保图像是有效的
     if (image.empty()) {
@@ -1614,7 +1608,7 @@ void MainWindow::updateImageDisplay() {
             image.convertTo(convertedImage, CV_8U, 255.0 / 65535.0);
         } else if (image.depth() == CV_32F) {
             // 32-bit float 归一化到 0-255
-            image.convertTo(convertedImage, CV_8U, 255.0 / 1.0);
+            image.convertTo(convertedImage, CV_8U, 255.0);
         } else {
             convertedImage = image;
         }
@@ -1623,14 +1617,21 @@ void MainWindow::updateImageDisplay() {
         // 彩色图
         if (image.depth() == CV_32F) {
             // 32-bit float 归一化到 0-255
-            image.convertTo(convertedImage, CV_8U, 255.0 / 1.0);
+            image.convertTo(convertedImage, CV_8U, 255.0);
         } else {
             convertedImage = image;
         }
+        // 确保图像为 RGB 格式
+        cv::cvtColor(convertedImage, convertedImage, cv::COLOR_BGR2RGB);
         format = QImage::Format_RGB888;
     } else {
         std::cerr << "Error: Unsupported image format." << std::endl;
         return;
+    }
+
+    // 确保转换后的图像数据是连续的
+    if (!convertedImage.isContinuous()) {
+        convertedImage = convertedImage.clone();
     }
 
     // 将 OpenCV 的图像转换为 QImage
@@ -1656,4 +1657,56 @@ void MainWindow::updateImageDisplay() {
     // 添加新的 QPixmap 到场景中
     QGraphicsPixmapItem *pixmapItem = new QGraphicsPixmapItem(pixmap);
     scene->addItem(pixmapItem);
+}
+
+//Transform功能
+
+// 水平翻转
+void MainWindow::onFlipHorizontally() {
+    myImage.flipHorizontally(); // 调用 MyImage 的水平翻转方法
+    updateImageDisplay(); // 更新图像显示
+}
+
+// 垂直翻转
+void MainWindow::onFlipVertically() {
+    myImage.flipVertically(); // 调用 MyImage 的垂直翻转方法
+    updateImageDisplay(); // 更新图像显示
+}
+
+// 顺时针旋转90度
+void MainWindow::onRotate90Right() {
+    myImage.rotateNinetyClockwise(); // 调用 MyImage 的顺时针旋转90度方法
+    updateImageDisplay(); // 更新图像显示
+}
+
+// 逆时针旋转90度
+void MainWindow::onRotate90Left() {
+    myImage.rotateNinetyCounterClockwise(); // 调用 MyImage 的逆时针旋转90度方法
+    updateImageDisplay(); // 更新图像显示
+}
+
+// 自定义旋转角度
+void MainWindow::onRotate() {
+    bool ok;
+    double angle = QInputDialog::getDouble(this, tr("Rotate"),
+                                           tr("Angle:"), 0.0, -360.0, 360.0, 2, &ok);
+    if (ok) {
+        myImage.rotate(angle); // 调用 MyImage 的旋转方法
+        updateImageDisplay(); // 更新图像显示
+    }
+}
+
+// 平移
+void MainWindow::onTranslate() {
+    bool ok;
+    double x_offset = QInputDialog::getDouble(this, tr("Translate"),
+                                              tr("X Offset:"), 0.0, -1000.0, 1000.0, 2, &ok);
+    if (!ok) return;
+
+    double y_offset = QInputDialog::getDouble(this, tr("Translate"),
+                                              tr("Y Offset:"), 0.0, -1000.0, 1000.0, 2, &ok);
+    if (ok) {
+        myImage.translate(x_offset, y_offset); // 调用 MyImage 的平移方法
+        updateImageDisplay(); // 更新图像显示
+    }
 }

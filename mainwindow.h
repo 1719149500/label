@@ -101,7 +101,12 @@ public slots:
     void onLookupTables();
 
     //Transform子菜单
+    void onFlipHorizontally();
+    void onFlipVertically();
+    void onRotate90Right();
+    void onRotate90Left();
     void onRotate();
+    void onTranslate();
 
     // Binary 子菜单项槽函数
     void onMakeBinary();
