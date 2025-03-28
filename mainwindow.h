@@ -41,6 +41,10 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = nullptr);
+    int lastMinimum;
+    int lastMaximum;
+    double lastContrast;
+    double lastBrightness;
 
 
 public slots:
@@ -108,6 +112,14 @@ public slots:
     void onRotate();
     void onTranslate();
 
+    //Adjust子菜单
+     void applyBrightnessContrast(int minimum, int maximum, double contrast, double brightness);
+
+    //Process
+
+    void onSmooth();
+    void onSharpen();
+
     // Binary 子菜单项槽函数
     void onMakeBinary();
     void onConvertToMask();
@@ -149,8 +161,21 @@ private:
     QString txtPath;
     QStringList folderImages;
     QStringList folderJsons;
+
     int index;
     double factor;// 全局图片比例参数
+
+    QAction *eightBitAction;
+    QAction *sixteenBitAction;
+    QAction *thirtyTwoBitAction;
+    QAction *eightBitColorAction;
+    QAction *rgbColorAction;
+    // 其他成员变量
+    QMenu *typeMenu;
+    QActionGroup *typeActionGroup;
+    // 重置 Type 子菜单中的 QAction 状态的函数
+    void resetTypeActions();
+
     QGraphicsScene *scene;
     QGraphicsView *view;
     QListWidget *listView;
@@ -162,6 +187,7 @@ private:
     QVBoxLayout  *labelListLayout;
     QTableWidget *tableWidget;
     QTabWidget *tabWidget;
+
 
     void loadImage(const QString &imagePath);
     void clearScene();

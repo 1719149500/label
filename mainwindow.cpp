@@ -58,7 +58,10 @@ MainWindow::MainWindow(QWidget *parent)
     currentImage = "";
     txtPath = "";
     index = 0;
-
+    lastMinimum = 0;
+    lastMaximum = 255;
+    lastContrast = 0.0;
+    lastBrightness = 0.0;
 
     // 初始化场景和视图
     scene = new QGraphicsScene(this);
@@ -404,29 +407,37 @@ MainWindow::MainWindow(QWidget *parent)
 
     // "Image"子菜单项
     // 创建 Type 子菜单
-    QMenu *typeMenu = imageMenu->addMenu(tr("Type"));
+    typeMenu = imageMenu->addMenu(tr("Type"));
 
-    // 创建 QAction，并设置标志
-    QAction *eightBitAction = typeMenu->addAction(tr("8-bit"));
-    eightBitAction->setCheckable(true); // 设置可选中
-    eightBitAction->setChecked(false);  // 默认不选中
+    // 创建 QActionGroup
+    typeActionGroup = new QActionGroup(this);
+    typeActionGroup->setExclusive(true); // 设置为互斥模式
 
-    QAction *sixteenBitAction = typeMenu->addAction(tr("16-bit"));
+    // 创建并初始化 QAction
+    eightBitAction = typeMenu->addAction(tr("8-bit"));
+    eightBitAction->setCheckable(true);
+    eightBitAction->setChecked(false);
+    typeActionGroup->addAction(eightBitAction);
+
+    sixteenBitAction = typeMenu->addAction(tr("16-bit"));
     sixteenBitAction->setCheckable(true);
     sixteenBitAction->setChecked(false);
+    typeActionGroup->addAction(sixteenBitAction);
 
-    QAction *thirtyTwoBitAction = typeMenu->addAction(tr("32-bit"));
+    thirtyTwoBitAction = typeMenu->addAction(tr("32-bit"));
     thirtyTwoBitAction->setCheckable(true);
     thirtyTwoBitAction->setChecked(false);
+    typeActionGroup->addAction(thirtyTwoBitAction);
 
-    QAction *eightBitColorAction = typeMenu->addAction(tr("8-bit Color"));
+    eightBitColorAction = typeMenu->addAction(tr("8-bit Color"));
     eightBitColorAction->setCheckable(true);
     eightBitColorAction->setChecked(false);
+    typeActionGroup->addAction(eightBitColorAction);
 
-    QAction *rgbColorAction = typeMenu->addAction(tr("RGB Color"));
+    rgbColorAction = typeMenu->addAction(tr("RGB Color"));
     rgbColorAction->setCheckable(true);
     rgbColorAction->setChecked(false);
-
+    typeActionGroup->addAction(rgbColorAction);
     // 连接信号与槽
     connect(eightBitAction, &QAction::triggered, this, [&]() {
         myImage.convertColorDepth(MyImage::k8BitGrayscale);
@@ -459,13 +470,18 @@ MainWindow::MainWindow(QWidget *parent)
     });
 
     //adjust 子菜单项
-    QMenu *adjustMenu = imageMenu->addMenu(tr("Adjust"));
-    QAction *bcAction = adjustMenu->addAction(tr("brightness/contrast"));
+    QMenu *adjustMenu = imageMenu->addMenu(tr("Adjust(调整)"));
+    QAction *bcAction = adjustMenu->addAction(tr("brightness/contrast(亮度/对比度)"));
     connect(bcAction, &QAction::triggered, this, [this]() {
         BrightnessContrastDialog dialog(this);
+        dialog.setMinimum(lastMinimum);
+        dialog.setMaximum(lastMaximum);
+        dialog.setContrast(lastContrast);
+        dialog.setBrightness(lastBrightness);
+        connect(&dialog, &BrightnessContrastDialog::applyBrightnessContrast, this, &MainWindow::applyBrightnessContrast);
         dialog.exec();
     });
-    QAction *thresholdAction = adjustMenu->addAction(tr("threshold"));
+    QAction *thresholdAction = adjustMenu->addAction(tr("threshold(灰度阈值)"));
     connect(thresholdAction, &QAction::triggered, this, [this]() {
         ThresholdDialog dialog(this);
         dialog.exec();
@@ -533,11 +549,14 @@ MainWindow::MainWindow(QWidget *parent)
     imageMenu->addAction(lookupTablesAction);
 
     // "Process"子菜单项
-    QAction *smooothAction = new QAction(tr("Smooth"), this);
+    QAction *smooothAction = new QAction(tr("Smooth(柔化)"), this);
     processMenu->addAction(smooothAction);
+    connect(smooothAction,&QAction::triggered,this,&MainWindow::onSmooth);
 
-    QAction *sharpenAction = new QAction(tr("Sharpen"), this);
+    QAction *sharpenAction = new QAction(tr("Sharpen(锐化)"), this);
     processMenu->addAction(sharpenAction);
+    connect(sharpenAction,&QAction::triggered,this,&MainWindow::onSharpen);
+
 
     // "Process" -> "Binary" 子菜单
     QMenu *binaryMenu = processMenu->addMenu(tr("Binary"));
@@ -810,43 +829,52 @@ void MainWindow::openFolder()
 {
     dirPath = QFileDialog::getExistingDirectory(this, "打开目录");
 
-    QStringList imageFilters;
-    imageFilters << "*.png" << "*.jpg";
-    QStringList jsonFilters;
-    jsonFilters << "*.json";
+    // 检查用户是否取消了选择文件夹
+    if (dirPath.isEmpty()) {
+        return; // 用户取消选择，直接返回
+    }
 
+    // 确保路径存在
+    if (!QDir(dirPath).exists()) {
+        QMessageBox::warning(this, tr("错误"), tr("指定的文件夹不存在: %1").arg(dirPath));
+        return; // 文件夹不存在，返回
+    }
 
     // 获取目录中的图片文件列表
-    QStringList imageFiles = QDir(dirPath).entryList(QStringList() << "*.png" << "*.jpg", QDir::Files);
-    QStringList jsonFiles = QDir(dirPath).entryList(QStringList() << "*.json", QDir::Files);
-
-    // 转换为绝对路径
+    QStringList imageFilters;
+    imageFilters << "*.png" << "*.jpg";
     QDir dir(dirPath);
+    QStringList imageFiles = dir.entryList(imageFilters, QDir::Files | QDir::NoDotAndDotDot);
+
+    // 清空之前的图片列表
+    folderImages.clear();
+    // 转换为绝对路径并添加到列表中
     for (const QString &file : imageFiles) {
         folderImages.append(dir.absoluteFilePath(file));
     }
 
-    for (const QString &file : jsonFiles) {
-        folderJsons.append(dir.absoluteFilePath(file));
-    }
-
-
-    for (const QString &image : imageFiles)
+    // 清空并更新listView
+    listView->clear();
+    for (const QString &image : imageFiles) {
         listView->addItem(image);
-
-    index = 0;
-    currentImage = folderImages[0];
-    // 使用 QDir::absoluteFilePath 来生成完整的路径
-    QString fullPath = QDir(dirPath).absoluteFilePath(currentImage);
-    // 打印完整的图片路径
-    qDebug() << "Loading image from path:" << fullPath;
-    // 检查文件是否存在
-    if (!QFile::exists(fullPath)) {
-        QMessageBox::warning(this, tr("警告"), tr("文件不存在: %1").arg(fullPath));
-        return;
     }
-    loadImage(fullPath);
-    listView->setCurrentRow(index);
+
+    // 检查是否找到图片文件
+    if (!folderImages.isEmpty()) {
+        index = 0;
+        currentImage = folderImages[0];
+        QString fullPath = QDir(dirPath).absoluteFilePath(currentImage);
+        qDebug() << "Loading image from path:" << fullPath;
+        if (!QFile::exists(fullPath)) {
+            QMessageBox::warning(this, tr("警告"), tr("文件不存在: %1").arg(fullPath));
+            return;
+        }
+        loadImage(fullPath);
+        listView->setCurrentRow(index);
+    } else {
+        // 如果没有找到图片文件，弹出提示信息
+        QMessageBox::information(this, tr("提示"), tr("文件夹需要包含PNG或者JPG文件。"));
+    }
 }
 
 void MainWindow::selectFromListView()
@@ -856,6 +884,22 @@ void MainWindow::selectFromListView()
     imageChange();
 }
 
+void MainWindow::previousImage(){
+    // 检查索引是否已经为 0，如果是，则无法再向前移动
+    if (index - 1 < 0)
+        return;
+
+    // 将索引向前移动
+    index--;
+
+    // 调用 imageChange() 函数来更新图片显示
+    imageChange();
+
+    // 更新 listView 的当前选中项
+    listView->setCurrentRow(index);
+    qDebug() << "previousImage() method clicked";
+};
+
 void MainWindow::nextImage()
 {
     if (index + 1 >= folderImages.size())
@@ -863,6 +907,8 @@ void MainWindow::nextImage()
     index++;
     imageChange();
     listView->setCurrentRow(index);
+
+
 }
 
 void MainWindow::imageChange()
@@ -870,6 +916,7 @@ void MainWindow::imageChange()
     clearScene();
     currentImage = folderImages[index];
     loadImage(currentImage);
+    resetTypeActions(); // 调用重置函数
 }
 
 void MainWindow::selectSceneImageSaveFolder()
@@ -1013,21 +1060,7 @@ void MainWindow::createBox(QRectF rect, const QString& label){
 
 
 
-void MainWindow::previousImage(){
-    // 检查索引是否已经为 0，如果是，则无法再向前移动
-    if (index - 1 < 0)
-        return;
 
-    // 将索引向前移动
-    index--;
-
-    // 调用 imageChange() 函数来更新图片显示
-    imageChange();
-
-    // 更新 listView 的当前选中项
-    listView->setCurrentRow(index);
-    qDebug() << "previousImage() method clicked";
-};
 
 // void MainWindow::toggleTriangleMode(bool checked)
 // {
@@ -1658,6 +1691,17 @@ void MainWindow::updateImageDisplay() {
 }
 
 
+
+//type
+void MainWindow::resetTypeActions() {
+    eightBitAction->setChecked(false);
+    sixteenBitAction->setChecked(false);
+    thirtyTwoBitAction->setChecked(false);
+    eightBitColorAction->setChecked(false);
+    rgbColorAction->setChecked(false);
+}
+
+
 //Transform功能
 
 // 水平翻转
@@ -1708,4 +1752,25 @@ void MainWindow::onTranslate() {
         myImage.translate(x_offset, y_offset); // 调用 MyImage 的平移方法
         updateImageDisplay(); // 更新图像显示
     }
+}
+
+
+//Adjust
+void MainWindow::applyBrightnessContrast(int minimum, int maximum, double contrast, double brightness) {
+    myImage.setBrightnessContrast(minimum, maximum, contrast, brightness);
+    // 更新图像显示
+    updateImageDisplay();
+}
+
+
+//Process
+//smooth柔化
+void MainWindow::onSmooth(){
+    myImage.smooth();
+    updateImageDisplay();
+}
+
+void MainWindow::onSharpen(){
+    myImage.sharpen();
+    updateImageDisplay();
 }

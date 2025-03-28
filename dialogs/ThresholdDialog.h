@@ -17,6 +17,7 @@ class ThresholdDialog : public QDialog {
 public:
     explicit ThresholdDialog(QWidget *parent = nullptr);
 
+
 private slots:
     void onAutoButtonPressed();
     void onApplyButtonPressed();
