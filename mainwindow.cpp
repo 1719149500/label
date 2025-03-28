@@ -1621,9 +1621,7 @@ void MainWindow::updateImageDisplay() {
         } else {
             convertedImage = image;
         }
-        // 确保图像为 RGB 格式
-        cv::cvtColor(convertedImage, convertedImage, cv::COLOR_BGR2RGB);
-        format = QImage::Format_RGB888;
+        format = QImage::Format_BGR888; // 使用BGR格式
     } else {
         std::cerr << "Error: Unsupported image format." << std::endl;
         return;
@@ -1635,7 +1633,7 @@ void MainWindow::updateImageDisplay() {
     }
 
     // 将 OpenCV 的图像转换为 QImage
-    qImage = QImage(convertedImage.data, convertedImage.cols, convertedImage.rows, convertedImage.step, format);
+    qImage = QImage((uchar*)convertedImage.data, convertedImage.cols, convertedImage.rows, convertedImage.step, format);
 
     // 检查 QImage 是否有效
     if (qImage.isNull()) {
@@ -1658,6 +1656,7 @@ void MainWindow::updateImageDisplay() {
     QGraphicsPixmapItem *pixmapItem = new QGraphicsPixmapItem(pixmap);
     scene->addItem(pixmapItem);
 }
+
 
 //Transform功能
 
