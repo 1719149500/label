@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 // BinaryProcessor.h
 #ifndef BINARY_PROCESSOR_H
@@ -29,24 +29,24 @@ public:
     BinaryProcessor(cv::Mat& img);
     void setOptions(const BinaryOptions& options);
 
-    // binary µÄÒ»ÏµÁĞ¹¦ÄÜ
-    void makeBinary(); // ¶şÖµ»¯
-    void convertToMask(); // ×ª»»Îª mask
+    // binary çš„ä¸€ç³»åˆ—åŠŸèƒ½
+    void makeBinary(); // äºŒå€¼åŒ–
+    void convertToMask(); // è½¬æ¢ä¸º mask
 
-    void erode(); // ÅòÕÍ
-    void dilate(); // ¸¯Ê´
-    void open(); // ¿ªÔËËã£¬ÏÈ¸¯Ê´ÔÙÅòÕÍ
-    void close(); // ±ÕÔËËã£¬ÏÈÅòÕÍÔÙ¸¯Ê´
+    void erode(); // è†¨èƒ€
+    void dilate(); // è…èš€
+    void open(); // å¼€è¿ç®—ï¼Œå…ˆè…èš€å†è†¨èƒ€
+    void close(); // é—­è¿ç®—ï¼Œå…ˆè†¨èƒ€å†è…èš€
     void median();
 
-    void outline(); // ÌáÈ¡±ßÔµ
-    void fillHoles(); // Ìî¶´
-    void skeletonize(); // ¹Ç¼Ü»¯
+    void outline(); // æå–è¾¹ç¼˜
+    void fillHoles(); // å¡«æ´
+    void skeletonize(); // éª¨æ¶åŒ–
 
-    void distanceMap(); // Å·ÊÏ¾àÀëÓ³ÉäEDM
-    void ultimatePoints(); // ¼«ÏŞ¸¯Ê´µã
-    void watershed(); // ·ÖË®ÁëËã·¨
-    void voronoi(); // Î¬ÅµÍ¼
+    void distanceMap(); // æ¬§æ°è·ç¦»æ˜ å°„EDM
+    void ultimatePoints(); // æé™è…èš€ç‚¹
+    void watershed(); // åˆ†æ°´å²­ç®—æ³•
+    void voronoi(); // ç»´è¯ºå›¾
 };
 
 #endif // BINARY_PROCESSOR_H

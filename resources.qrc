@@ -3589,6 +3589,7 @@
         <file>IMG/new icons/freehand.png</file>
         <file>IMG/new icons/polygon.png</file>
         <file>IMG/new icons/rectangle.png</file>
+        <file>IMG/new icons/ai.png</file>
         <file>IMG/new icons/straightLine.png</file>
     </qresource>
 </RCC>

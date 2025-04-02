@@ -9,6 +9,7 @@
 #include "dialogs/UnsharpMaskDialog.h"
 #include "dialogs/TopHatDialog.h"
 #include "processors/MyImage.h"
+#include "processors/MyModel.h"
 #include <QMenuBar>
 #include <QFileDialog>
 #include <QMessageBox>
@@ -279,7 +280,9 @@ MainWindow::MainWindow(QWidget *parent)
     connect(actionIcon3, &QAction::triggered, this, &MainWindow::zoomOut);
     QAction *actionIcon4 = new QAction(QIcon(":/IMG/new icons/upload.png"), "重置大小", this);
     connect(actionIcon4, &QAction::triggered, this, &MainWindow::resetZoom);
-    QAction *actionIcon5 = new QAction(QIcon(":/IMG/new icons/settings.png"), "操作5", this);
+    QAction *actionIcon5 = new QAction(QIcon(":/IMG/new icons/ai.png"), "AI", this);
+    connect(actionIcon5, &QAction::triggered, this, &MainWindow::chooseModelPath);
+
     QAction *rectSelectionAction = new QAction(QIcon(":/IMG/new icons/rectangle.png"), "", this); // 文字设置为空
     rectSelectionAction->setToolTip("矩形"); // 设置工具提示
     rightToolBar->addAction(rectSelectionAction);
@@ -1773,4 +1776,24 @@ void MainWindow::onSmooth(){
 void MainWindow::onSharpen(){
     myImage.sharpen();
     updateImageDisplay();
+}
+
+//AI
+void MainWindow::chooseModelPath() {
+    // 弹出文件选择对话框，让用户选择模型文件
+    QString modelFilePath = QFileDialog::getOpenFileName(this, "选择模型文件", QDir::homePath(), "Model Files (*.torchscript)");
+
+    // 检查用户是否取消了选择
+    if (modelFilePath.isEmpty()) {
+        QMessageBox::warning(this, "操作取消", "未选择模型文件。");
+        return;
+    }
+
+    // 调用方法处理图像并生成 JSON 文件
+    runAIModel(modelFilePath.toStdString());
+}
+
+void MainWindow::runAIModel(const std::string& model_path) {
+    ModelProcessor modelProcessor;
+    modelProcessor.processImageWithModel(model_path, myImage); // image 为 MyImage 的一个实例
 }

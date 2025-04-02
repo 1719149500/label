@@ -28,6 +28,7 @@
 #include <QStatusBar>
 #include <QActionGroup>
 #include "processors/MyImage.h"
+#include "processors/ModelProcessor.cpp"
 
 class ScaleDialog;
 class QAction;
@@ -153,6 +154,10 @@ public slots:
     void onHistogram();
     void onPlotProfile();
 
+    //AI功能函数
+    void chooseModelPath();  // 声明选择模型路径的方法
+    void runAIModel(const std::string& model_path);  // 声明运行 AI 模型的方法
+
 
 private:
     Ui::MainWindow *ui;
@@ -197,6 +202,8 @@ private:
     bool currentJson();
 
     MyImage myImage;
+    ModelProcessor modelProcessor;  // 添加 ModelProcessor 实例
+    
 };
 
 #endif // MAINWINDOW_H

@@ -1,0 +1,24 @@
+# ninja log v5
+26	1114	7651301692502194	label2_autogen/timestamp	f4340710be6f730b
+11222	20130	7651282916191758	CMakeFiles/label2.dir/mainwindow.cpp.obj	5bf1ffa0d089dcf5
+3624	11198	7651282826790643	label2_autogen/EWIEGA46WW/qrc_resources.cpp	a6f9da97e3c8c6e3
+20134	23728	7651282952201029	CMakeFiles/label2.dir/dialogs/UnsharpMaskDialog.cpp.obj	ba3573bf69241fd2
+11198	15782	7651282872398798	CMakeFiles/label2.dir/dialogs/scaledialog.cpp.obj	11e43c823b84f36b
+11316	15835	7651282872085955	CMakeFiles/label2.dir/dialogs/ThresholdDialog.cpp.obj	7ea1ed96471b93a7
+11267	20181	7651282916737581	CMakeFiles/label2.dir/main.cpp.obj	7871bfb65fe1de44
+1127	6423	7651301751128299	CMakeFiles/label2.dir/label2_autogen/mocs_compilation.cpp.obj	3438f1d2dbedbfe9
+11289	19356	7651282908200177	CMakeFiles/label2.dir/dialogs/BrightnessContrastDialog.cpp.obj	41b943fad1eb8bd9
+20186	26512	7651282979476611	CMakeFiles/label2.dir/processors/MyImage.cpp.obj	1c37a7f7aad74621
+15835	20353	7651282918095103	CMakeFiles/label2.dir/dialogs/FilterDialog.cpp.obj	749eff35e7f71e48
+15801	21009	7651282924971360	CMakeFiles/label2.dir/dialogs/BinaryOptionsDialog.cpp.obj	873f6426bc4dc6a7
+20075	23668	7651282951571389	CMakeFiles/label2.dir/dialogs/GaussianBlurDialog.cpp.obj	40d7b29f2b3615e4
+20354	24287	7651282957671394	CMakeFiles/label2.dir/dialogs/TopHatDialog.cpp.obj	d193e0514f1634e6
+19365	24662	7651282961109200	CMakeFiles/label2.dir/dialogs/ConvolveDialog.cpp.obj	1aa6b35a8acdb341
+21009	25378	7651282968387283	CMakeFiles/label2.dir/processors/BinaryProcessor.cpp.obj	5a4b1d6723282117
+24287	25421	7651282968896989	CMakeFiles/label2.dir/processors/Shape.cpp.obj	c0e981f0a7a3ec6a
+23728	27995	7651282994816033	CMakeFiles/label2.dir/processors/FilterProcessor.cpp.obj	e99b1e94e94a8a0a
+25421	30233	7651283017193271	CMakeFiles/label2.dir/label2_autogen/EWIEGA46WW/qrc_resources.cpp.obj	77067ff42beefd1e
+6430	7334	7651301758542875	label2.exe	56fd183ecff8ef38
+28	1041	7651794227214347	label2_autogen/timestamp	f4340710be6f730b
+1050	6709	7651794289162374	CMakeFiles/label2.dir/label2_autogen/mocs_compilation.cpp.obj	3438f1d2dbedbfe9
+6732	9075	7651794301508719	label2.exe	7e6aa67396ee845f

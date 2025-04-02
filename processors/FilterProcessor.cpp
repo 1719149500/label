@@ -1,4 +1,4 @@
-#include "FilterProcessor.h"
+﻿#include "FilterProcessor.h"
 
 FilterProcessor::FilterProcessor(cv::Mat& img) : image_mat(img) {}
 

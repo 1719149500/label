@@ -1,4 +1,4 @@
-#include "BinaryProcessor.h"
+﻿#include "BinaryProcessor.h"
 
 
 BinaryProcessor::BinaryProcessor(cv::Mat& img)

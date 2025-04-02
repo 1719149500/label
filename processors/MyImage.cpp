@@ -16,22 +16,22 @@ MyImage::MyImage(const std::string& image_path)
 
 
 /* 仅用于测试 */
-void MyImage::show() {
+void MyImage::show() const{
     cv::imshow("Test result", image_mat);
     int k = cv::waitKey(0); // Wait for a keystroke in the window
 }
 
 
 /* 函数的具体实现 */
-std::string MyImage::getImagePath() {
+std::string MyImage::getImagePath() const{
     return image_path;
 };
 
-int MyImage::getWidth() {
+int MyImage::getWidth() const {
     return image_width;
 }
 
-int MyImage::getHeight() {
+int MyImage::getHeight() const{
     return image_height;
 }
 

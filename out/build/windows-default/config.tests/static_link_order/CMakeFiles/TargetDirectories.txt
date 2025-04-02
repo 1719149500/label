@@ -1,0 +1,5 @@
+F:/AsOneFile/mycode/QtApp/label2/out/build/windows-default/config.tests/static_link_order/CMakeFiles/objLib.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/windows-default/config.tests/static_link_order/CMakeFiles/staticLib.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/windows-default/config.tests/static_link_order/CMakeFiles/edit_cache.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/windows-default/config.tests/static_link_order/CMakeFiles/static_link_order_test.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/windows-default/config.tests/static_link_order/CMakeFiles/rebuild_cache.dir

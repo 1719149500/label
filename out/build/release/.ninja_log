@@ -1,0 +1,19 @@
+# ninja log v5
+17	3695	7651807752574979	label2_autogen/timestamp	8712dc3cabd46d01
+3697	5477	7651807776238394	label2_autogen/EWIEGA46WW/qrc_resources.cpp	c99cbe988a1866f
+5579	11698	7651807837902821	CMakeFiles/label2.dir/dialogs/BinaryOptionsDialog.cpp.obj	f643bebb41230850
+17516	21901	7651807939888031	CMakeFiles/label2.dir/dialogs/UnsharpMaskDialog.cpp.obj	939046481ec60e27
+5554	11766	7651807838202646	CMakeFiles/label2.dir/dialogs/scaledialog.cpp.obj	38c66e2e1d444391
+5501	15495	7651807876033345	CMakeFiles/label2.dir/main.cpp.obj	8b776c588fc51ff1
+11766	17476	7651807895505724	CMakeFiles/label2.dir/dialogs/GaussianBlurDialog.cpp.obj	ed19cc23c9e8252e
+5527	17512	7651807896735007	CMakeFiles/label2.dir/label2_autogen/mocs_compilation.cpp.obj	161083274a433f56
+5604	15626	7651807877538912	CMakeFiles/label2.dir/dialogs/BrightnessContrastDialog.cpp.obj	5918a74e37c26130
+17477	23939	7651807961081197	CMakeFiles/label2.dir/processors/MyImage.cpp.obj	8c6a9db556caf899
+11728	18241	7651807903522122	CMakeFiles/label2.dir/dialogs/ThresholdDialog.cpp.obj	da1765e3ab6c54d6
+5477	20030	7651807921713299	CMakeFiles/label2.dir/mainwindow.cpp.obj	e7363a5ae0bf3340
+15516	20673	7651807927739250	CMakeFiles/label2.dir/dialogs/FilterDialog.cpp.obj	18910caf16c1a4b2
+15629	21771	7651807939008915	CMakeFiles/label2.dir/dialogs/ConvolveDialog.cpp.obj	ea0bb0ec66249790
+18241	22397	7651807945197433	CMakeFiles/label2.dir/dialogs/TopHatDialog.cpp.obj	acb6ac35209ceedc
+20674	24325	7651807964966027	CMakeFiles/label2.dir/processors/FilterProcessor.cpp.obj	1dbe06e7a0484965
+20032	25029	7651807971845339	CMakeFiles/label2.dir/label2_autogen/EWIEGA46WW/qrc_resources.cpp.obj	b0a13a9e8b63c353
+21772	24957	7651807971275672	CMakeFiles/label2.dir/processors/BinaryProcessor.cpp.obj	4c8660253d8e1e07

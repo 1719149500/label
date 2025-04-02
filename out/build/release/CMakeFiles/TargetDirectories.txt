@@ -1,0 +1,8 @@
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/rebuild_cache.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/label2.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/install/local.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/install.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/edit_cache.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/list_install_components.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/label2_autogen_timestamp_deps.dir
+F:/AsOneFile/mycode/QtApp/label2/out/build/release/CMakeFiles/label2_autogen.dir

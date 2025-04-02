@@ -52,11 +52,11 @@ public:
     MyImage(const std::string& image_path);
 
     /* 仅用于测试 */
-    void show();
-    std::string getImagePath() ;
+    void show() const;
+    std::string getImagePath() const ;
 
-    int getWidth() ;
-    int getHeight() ;
+    int getWidth() const;
+    int getHeight() const;
 
     // 更新图像的方法
     void updateImage(const std::string& newImagePath);

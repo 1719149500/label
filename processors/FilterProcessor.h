@@ -1,4 +1,4 @@
-#pragma once
+ï»¿#pragma once
 
 #ifndef FILTER_PROCESSOR_H
 #define FILTER_PROCESSOR_H
@@ -7,7 +7,7 @@
 
 class FilterProcessor {
 private:
-    cv::Mat& image_mat;  // ÒıÓÃ Image µÄ Mat£¬±ÜÃâÊı¾İ¸´ÖÆ
+    cv::Mat& image_mat;  // å¼•ç”¨ Image çš„ Matï¼Œé¿å…æ•°æ®å¤åˆ¶
 
 public:
     FilterProcessor(cv::Mat& img);
