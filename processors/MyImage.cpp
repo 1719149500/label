@@ -266,8 +266,7 @@ std::vector<float> MyImage::plotProfile(const cv::Mat& mask) {
 }
 
 void MyImage::updateImage(const std::string& newImagePath) {
-    // ???·??
-    qDebug() << "Updating image with path:" << QString::fromStdString(newImagePath);
+ 
 
     // ????·??
     image_path = newImagePath;
@@ -277,12 +276,7 @@ void MyImage::updateImage(const std::string& newImagePath) {
     // ???????
     image_mat = cv::imread(newImagePath);
 
-    // ??????????????
-    if (image_mat.empty()) {
-        qDebug() << "Failed to load image from path:" << QString::fromStdString(newImagePath);
-    } else {
-        qDebug() << "Image loaded successfully from path:" << QString::fromStdString(newImagePath);
-    }
+
 }
 
 cv::Mat& MyImage::getImageMat() {
@@ -293,19 +287,5 @@ bool MyImage::isEmpty() const {
     return image_mat.empty();
 }
 
-QAction* selectedAction;
-void MyImage::updateSelectedAction(QAction* selectedAction) {
-    // 如果有当前选中的选项，取消选中
-    if (this->selectedAction) {
-        this->selectedAction->setChecked(false);
-    }
 
-    // 更新当前选中的选项
-    this->selectedAction = selectedAction;
-
-    // 设置当前选中的选项为选中状态
-    if (this->selectedAction) {
-        this->selectedAction->setChecked(true);
-    }
-}
 

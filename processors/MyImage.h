@@ -7,7 +7,7 @@
 #include <opencv2/opencv.hpp>
 #include "BinaryProcessor.h"
 #include "FilterProcessor.h"
-#include <QAction>
+
 
 /* 图像元数据 */
 struct ImageMetadata {
@@ -31,8 +31,7 @@ private:
     ImageMetadata image_metadata;
     // 图像转为 OpenCV Mat
     cv::Mat image_mat;
-    // 在 MyImage 类中添加成员变量
-    QAction* selectedAction;
+ 
 
     int image_width;
     int image_height;
@@ -41,7 +40,7 @@ public:
     BinaryProcessor binary;
     FilterProcessor filter;
     /* 枚举色彩位深，用于 MyImage::convertColorDepth() 函数 */
-    enum ColorDepth {
+    enum ColorDepth {//前端修改为类内定义
         k8BitGrayscale,
         k16BitGrayscale,
         k32BitGrayscale,
@@ -70,7 +69,7 @@ public:
     void scale(float factor);
     void scaleByWidth(int width);
     void scaleByHeight(int Height);
-    cv::Mat& getImageMat();
+    cv::Mat& getImageMat();//前端加入
 
     // transform 的一系列功能
     void flipHorizontally(); // 水平翻转
@@ -82,7 +81,7 @@ public:
 
     // type
     void convertColorDepth(ColorDepth color_depth); // 转换为不同位深的灰度图像或是彩色图像
-    void updateSelectedAction(QAction* selectedAction);
+ 
 
     // adjust 的一系列功能
     void setBrightnessContrast(int minimum, int maximum, double contrast, double brightness); // 亮度对比度
@@ -95,7 +94,7 @@ public:
     // analyze 的一系列功能
     std::vector<float> histogram();
     std::vector<float> plotProfile(const cv::Mat& mask);
-    bool isEmpty() const; // 添加 isEmpty 方法
+    bool isEmpty() const; // 前端添加 isEmpty 方法
 };
 
 

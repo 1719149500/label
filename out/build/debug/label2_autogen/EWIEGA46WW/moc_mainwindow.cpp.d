@@ -1,6 +1,10 @@
 F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_mainwindow.cpp: F:/AsOneFile/mycode/QtApp/label2/mainwindow.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/QDebug \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/QDir \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/QFile \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/QList \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/QString \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/QTextStream \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/q20functional.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/q20memory.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore/q20type_traits.h \
@@ -134,6 +138,7 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/QKeySequence \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/QPainter \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/QPixmap \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/QShortcut \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qaction.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qactiongroup.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qbitmap.h \
@@ -158,6 +163,7 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qregion.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qrgb.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qrgba64.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qshortcut.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qtextcursor.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qtextdocument.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qtextformat.h \
@@ -169,19 +175,32 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qvalidator.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qwindowdefs.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtGui/qwindowdefs_win.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QCheckBox \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QComboBox \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QDialog \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QDockWidget \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QFileDialog \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QFormLayout \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QGraphicsPixmapItem \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QGraphicsScene \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QGraphicsView \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QHBoxLayout \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QInputDialog \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QLabel \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QLayout \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QLineEdit \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QListWidget \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QMainWindow \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QMdiSubWindow \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QMenuBar \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QMessageBox \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QPushButton \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QSlider \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QSplitter \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QStatusBar \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QTabWidget \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QTableWidget \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QTextEdit \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QToolBar \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QToolTip \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/QVBoxLayout \
@@ -193,14 +212,19 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qabstractslider.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qabstractspinbox.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qboxlayout.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qcheckbox.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qcombobox.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qdialog.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qdialogbuttonbox.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qdockwidget.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qfiledialog.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qformlayout.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qframe.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qgraphicsitem.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qgraphicsscene.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qgraphicsview.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qgridlayout.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qinputdialog.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qlabel.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qlayout.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qlayoutitem.h \
@@ -208,6 +232,9 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qlistview.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qlistwidget.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qmainwindow.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qmdisubwindow.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qmenu.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qmenubar.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qmessagebox.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qpushbutton.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qrubberband.h \
@@ -222,6 +249,7 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtableview.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtablewidget.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtabwidget.h \
+  F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtextedit.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtoolbar.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtooltip.h \
   F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtWidgets/qtwidgets-config.h \
@@ -231,6 +259,7 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/ATen.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/BlasBackend.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/CPUGeneratorImpl.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/Config.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/Context.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/Device.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/DeviceAccelerator.h \
@@ -249,6 +278,10 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/NamedTensorUtils.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/NativeFunctions.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/NestedTensorImpl.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/PadNd.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/Parallel-inl.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/Parallel.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/ParallelOpenMP.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/PythonTorchFunctionTLS.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/SDPBackend.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/ATen/SavedTensorHooks.h \
@@ -4647,6 +4680,7 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/Metaprogramming.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/Optional.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/OptionalArrayRef.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/ParallelGuard.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/Registry.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/SmallVector.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/StringUtil.h \
@@ -4687,18 +4721,172 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/strides.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/string_utils.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/string_view.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/strong_type.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/c10/util/typeid.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/caffe2/serialize/inline_container.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/caffe2/serialize/istream_adapter.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/caffe2/serialize/read_adapter_interface.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/caffe2/serialize/versions.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/Export.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/all.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/arg.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/autograd.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/cuda.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/dataloader.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/dataloader/base.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateful.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/dataloader/stateless.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/dataloader_options.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets/base.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets/chunk.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets/map.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets/mnist.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets/shared.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets/stateful.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/datasets/tensor.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/detail/data_shuttle.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/detail/queue.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/detail/sequencers.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/example.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/iterator.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers/base.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers/custom_batch_request.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers/distributed.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers/random.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers/sequential.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers/serialize.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/samplers/stream.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/transforms.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/transforms/base.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/transforms/collate.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/transforms/lambda.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/transforms/stack.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/transforms/tensor.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/data/worker_exception.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/detail/TensorDataContainer.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/detail/static.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/enum.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/expanding_array.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/fft.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/imethod.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/jit.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/mps.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nested.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/cloneable.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/activation.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/batchnorm.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/conv.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/distance.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/dropout.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/embedding.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/fold.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/instancenorm.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/linear.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/loss.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/normalization.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/padding.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/pixelshuffle.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/pooling.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/upsampling.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/functional/vision.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/init.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/module.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/_functions.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/activation.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/adaptive.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/batchnorm.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/common.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/any.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/any_module_holder.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/any_value.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/functional.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/moduledict.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/modulelist.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/named_any.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/parameterdict.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/parameterlist.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/container/sequential.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/conv.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/distance.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/dropout.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/embedding.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/fold.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/instancenorm.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/linear.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/loss.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/normalization.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/padding.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/pixelshuffle.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/pooling.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/rnn.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/transformer.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/transformercoder.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/transformerlayer.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/upsampling.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/modules/utils.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/activation.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/adaptive.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/batchnorm.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/conv.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/distance.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/dropout.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/embedding.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/fold.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/instancenorm.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/linear.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/loss.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/normalization.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/padding.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/pixelshuffle.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/pooling.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/rnn.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/transformer.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/transformercoder.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/transformerlayer.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/upsampling.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/options/vision.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/pimpl-inl.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/pimpl.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/utils.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/utils/clip_grad.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/utils/convert_parameters.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/nn/utils/rnn.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/adagrad.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/adam.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/adamw.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/lbfgs.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/optimizer.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/rmsprop.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/schedulers/lr_scheduler.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/schedulers/reduce_on_plateau_scheduler.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/schedulers/step_lr.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/serialize.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/optim/sgd.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/ordered_dict.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/serialize.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/serialize/archive.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/serialize/input-archive.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/serialize/output-archive.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/serialize/tensor.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/sparse.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/special.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/torch.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/types.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/utils.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/version.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include/torch/xpu.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/InferenceMode.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/anomaly_mode.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/autograd.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/autograd_not_implemented_fallback.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/cpp_hook.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/custom_function.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/edge.h \
@@ -4710,6 +4898,9 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/graph_task.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/input_buffer.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/input_metadata.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/profiler.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/profiler_kineto.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/profiler_legacy.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/saved_variable.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/saved_variable_hooks.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/autograd/utils/warnings.h \
@@ -4753,6 +4944,11 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/jit/serialization/pickle.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/jit/serialization/pickler.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/jit/serialization/unpickler.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/profiler/api.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/profiler/events.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/profiler/orchestration/observer.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/profiler/stubs/base.h \
+  F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/profiler/util.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/utils/python_stub.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/utils/schema_info.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/utils/torch_dispatch_mode.h \
@@ -4761,113 +4957,129 @@ F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/EWIEGA46WW/moc_m
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/custom_class_detail.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/library.h \
   F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/script.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/BinaryOptionsDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/BrightnessContrastDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/ConvolveDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/FilterDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/GaussianBlurDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/ScaleDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/ThresholdDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/TopHatDialog.h \
+  F:/AsOneFile/mycode/QtApp/label2/dialogs/UnsharpMaskDialog.h \
   F:/AsOneFile/mycode/QtApp/label2/processors/BinaryProcessor.h \
   F:/AsOneFile/mycode/QtApp/label2/processors/FilterProcessor.h \
-  F:/AsOneFile/mycode/QtApp/label2/processors/ModelProcessor.cpp \
   F:/AsOneFile/mycode/QtApp/label2/processors/MyImage.h \
-  F:/AsOneFile/mycode/QtApp/label2/processors/MyModel.h \
-  F:/AsOneFile/mycode/QtApp/label2/processors/Shape.h \
+  F:/AsOneFile/mycode/QtApp/label2/processors/MyShape.h \
   F:/AsOneFile/mycode/QtApp/label2/processors/Workspace.h \
-  F:/AsOneFile/opencv/build/include/opencv2/calib3d.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/affine.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/async.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/base.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/bufferpool.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/check.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cuda.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cuda.inl.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cuda_types.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cv_cpu_dispatch.h \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cvdef.h \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cvstd.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cvstd.inl.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/cvstd_wrapper.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/fast_math.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/hal/interface.h \
-  F:/AsOneFile/opencv/build/include/opencv2/core/mat.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/mat.inl.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/matx.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/neon_utils.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/operations.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/optim.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/ovx.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/persistence.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/saturate.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/traits.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/types.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/utility.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/version.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/core/vsx_utils.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/dnn.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/dnn/dict.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/dnn/dnn.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/dnn/dnn.inl.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/dnn/layer.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/dnn/utils/inference_engine.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/dnn/version.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/features2d.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/flann.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/all_indices.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/allocator.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/any.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/autotuned_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/composite_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/config.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/defines.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/dist.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/dynamic_bitset.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/flann_base.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/general.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/ground_truth.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/heap.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/hierarchical_clustering_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/index_testing.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/kdtree_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/kdtree_single_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/kmeans_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/linear_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/logger.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/lsh_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/lsh_table.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/matrix.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/miniflann.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/nn_index.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/params.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/random.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/result_set.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/sampling.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/saving.h \
-  F:/AsOneFile/opencv/build/include/opencv2/flann/timer.h \
-  F:/AsOneFile/opencv/build/include/opencv2/highgui.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/imgcodecs.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/imgproc.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/imgproc/segmentation.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/ml.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/ml/ml.inl.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/objdetect.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/objdetect/aruco_board.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/objdetect/aruco_detector.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/objdetect/aruco_dictionary.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/objdetect/charuco_detector.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/objdetect/detection_based_tracker.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/objdetect/face.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/opencv.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/opencv_modules.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/photo.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/blenders.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/camera.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/exposure_compensate.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/matchers.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/motion_estimators.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/seam_finders.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/util.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/util_inl.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/warpers.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/detail/warpers_inl.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/stitching/warpers.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/video.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/video/background_segm.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/video/tracking.hpp \
-  F:/AsOneFile/opencv/build/include/opencv2/videoio.hpp
+  F:/AsOneFile/mycode/QtApp/label2/processors/YoloModel.h \
+  F:/AsOneFile/mycode/QtApp/label2/processors/YoloModelProcessor.h \
+  F:/AsOneFile/mycode/QtApp/label2/processors/point.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/calib3d.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/affine.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/async.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/base.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/bufferpool.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/check.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cuda.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cuda.inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cuda_types.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cv_cpu_dispatch.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cvdef.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cvstd.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cvstd.inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/cvstd_wrapper.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/fast_math.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/hal/interface.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/mat.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/mat.inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/matx.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/matx.inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/neon_utils.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/operations.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/optim.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/ovx.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/persistence.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/saturate.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/traits.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/types.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/utility.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/utils/logger.defines.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/utils/logger.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/utils/logtag.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/version.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/core/vsx_utils.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/dnn.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/dnn/dict.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/dnn/dnn.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/dnn/dnn.inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/dnn/layer.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/dnn/utils/inference_engine.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/dnn/version.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/features2d.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/all_indices.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/allocator.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/any.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/autotuned_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/composite_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/config.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/defines.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/dist.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/dynamic_bitset.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/flann_base.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/general.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/ground_truth.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/heap.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/hierarchical_clustering_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/index_testing.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/kdtree_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/kdtree_single_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/kmeans_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/linear_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/logger.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/lsh_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/lsh_table.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/matrix.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/miniflann.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/nn_index.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/params.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/random.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/result_set.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/sampling.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/saving.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/flann/timer.h \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/highgui.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/imgcodecs.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/imgproc.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/imgproc/segmentation.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/ml.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/ml/ml.inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/aruco_board.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/aruco_detector.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/aruco_dictionary.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/barcode.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/charuco_detector.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/detection_based_tracker.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/face.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/objdetect/graphical_code_detector.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/opencv.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/opencv_modules.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/photo.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/blenders.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/camera.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/exposure_compensate.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/matchers.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/motion_estimators.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/seam_finders.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/util.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/util_inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/warpers.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/detail/warpers_inl.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/stitching/warpers.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/video.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/video/background_segm.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/video/tracking.hpp \
+  F:/AsOneFile/opencv_4100/build/include/opencv2/videoio.hpp

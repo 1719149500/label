@@ -12,7 +12,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 指定 OpenCV 的路径
-set(OpenCV_DIR "F:/AsOneFile/opencv/build/x64/vc16/lib")
+set(OpenCV_DIR "F:/AsOneFile/opencv_4100/build/x64/vc16/lib")
 
 # 包含 nlohmann/json.hpp 的路径
 
@@ -39,7 +39,7 @@ set(DLL_FILES
     "${DLL_DIR}/Qt6Guid.dll"
     "${DLL_DIR}/Qt6Core.dll"
     "${DLL_DIR}/Qt6Widgets.dll"
-    "F:/AsOneFile/opencv/build/x64/vc16/bin/opencv_world470d.dll"
+    "F:/AsOneFile/opencv_4100/build/x64/vc16/bin/opencv_world4100d.dll"
     # 添加其他需要的DLL文件
 )
 
@@ -53,7 +53,8 @@ set(CMAKE_AUTORCC ON)
 # 设置源文件
 set(PROJECT_SOURCES
     main.cpp
-    mainwindow.cpp
+    mainwindow_functions.cpp
+    mainwindow_ui.cpp
     dialogs/ScaleDialog.cpp
     dialogs/BrightnessContrastDialog.cpp
     dialogs/ThresholdDialog.cpp
@@ -66,10 +67,15 @@ set(PROJECT_SOURCES
     processors/MyImage.cpp
     processors/BinaryProcessor.cpp
     processors/FilterProcessor.cpp
+<<<<<<< HEAD
     processors/MyModel.cpp
     processors/Shape.cpp
+=======
+    processors/YoloModel.cpp
+    processors/MyShape.cpp
+>>>>>>> 299192a (读取旧json框完成)
     processors/Workspace.cpp
-    processors/ModelProcessor.cpp
+    processors/YoloModelProcessor.cpp
 )
 
 set(PROJECT_HEADERS
@@ -86,9 +92,17 @@ set(PROJECT_HEADERS
     processors/MyImage.h
     processors/BinaryProcessor.h
     processors/FilterProcessor.h
+<<<<<<< HEAD
     processors/MyModel.h
     processors/Shape.h
     processors/Workspace.h
+=======
+    processors/YoloModel.h
+    processors/MyShape.h
+    processors/Workspace.h
+    processors/Point.h
+    processors/YoloModelProcessor.h
+>>>>>>> 299192a (读取旧json框完成)
 )
 
 # 创建可执行文件

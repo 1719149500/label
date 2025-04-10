@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
+
 #include <QMainWindow>
 #include <QList>
 #include <QString>
@@ -11,8 +12,15 @@
 #include <QPushButton>
 #include <QVBoxLayout>
 #include <QWidget>
+#include <QAction>
+#include <QTableWidget>
+#include <QIcon>
+#include <QStatusBar>
+#include <QActionGroup>
+#include <QMenuBar>
 #include <QFileDialog>
 #include <QMessageBox>
+#include <QShortcut>
 #include <QToolTip>
 #include <QPainter>
 #include <QImage>
@@ -22,13 +30,35 @@
 #include <QGraphicsPixmapItem>
 #include <QToolBar>
 #include <QKeySequence>
-#include <QAction>
+#include <QDebug>
+#include <QDir>
+#include <QFile>
+#include <QTextStream>
 #include <QTableWidget>
-#include <QIcon>
-#include <QStatusBar>
-#include <QActionGroup>
-#include "processors/MyImage.h"
-#include "processors/ModelProcessor.cpp"
+#include <QVBoxLayout>
+#include <QHBoxLayout>
+#include <QPushButton>
+#include <QLineEdit>
+#include <QComboBox>
+#include <QCheckBox>
+#include <QListWidget>
+#include <QDockWidget>
+#include <QMdiSubWindow>
+#include <QTabWidget>
+#include <QDialog>
+#include <QInputDialog>
+
+#include "dialogs/BrightnessContrastDialog.h"
+#include "dialogs/ScaleDialog.h"
+#include "dialogs/ThresholdDialog.h"
+#include "dialogs/BinaryOptionsDialog.h"
+#include "dialogs/ConvolveDialog.h"
+#include "dialogs/GaussianBlurDialog.h"
+#include "dialogs/FilterDialog.h"
+#include "dialogs/UnsharpMaskDialog.h"
+#include "dialogs/TopHatDialog.h"
+#include "processors/Workspace.h"
+
 
 class ScaleDialog;
 class QAction;
@@ -159,6 +189,17 @@ public slots:
     void runAIModel(const std::string& model_path);  // 声明运行 AI 模型的方法
 
 
+    void loadImage(const QString& imagePath);
+    void drawShapes();
+    void clearScene();
+
+    void updateLabelList();
+    void deleteBox(QGraphicsItem* item);
+    bool currentJson();
+
+
+
+
 private:
     Ui::MainWindow *ui;
     QString dirPath;
@@ -175,6 +216,7 @@ private:
     QAction *thirtyTwoBitAction;
     QAction *eightBitColorAction;
     QAction *rgbColorAction;
+    QAction *selectedAction;
     // 其他成员变量
     QMenu *typeMenu;
     QActionGroup *typeActionGroup;
@@ -193,16 +235,11 @@ private:
     QTableWidget *tableWidget;
     QTabWidget *tabWidget;
 
-
-    void loadImage(const QString &imagePath);
-    void clearScene();
     QList<QRectF> saveShapes();
-    void updateLabelList();
-    void deleteBox(QGraphicsItem *item);
-    bool currentJson();
 
-    MyImage myImage;
-    ModelProcessor modelProcessor;  // 添加 ModelProcessor 实例
+
+
+    std::unique_ptr<Workspace> workspace;
     
 };
 

@@ -299,13 +299,13 @@
 		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/CheckCXXSourceCompiles.cmake",
 		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
 		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake",
-		"F:/AsOneFile/opencv/build/x64/vc16/lib/OpenCVConfig-version.cmake",
-		"F:/AsOneFile/opencv/build/x64/vc16/lib/OpenCVConfig.cmake",
+		"F:/AsOneFile/opencv_4100/build/x64/vc16/lib/OpenCVConfig-version.cmake",
+		"F:/AsOneFile/opencv_4100/build/x64/vc16/lib/OpenCVConfig.cmake",
 		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
 		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/FindPackageMessage.cmake",
-		"F:/AsOneFile/opencv/build/x64/vc16/lib/OpenCVModules.cmake",
-		"F:/AsOneFile/opencv/build/x64/vc16/lib/OpenCVModules-debug.cmake",
-		"F:/AsOneFile/opencv/build/x64/vc16/lib/OpenCVModules-release.cmake",
+		"F:/AsOneFile/opencv_4100/build/x64/vc16/lib/OpenCVModules.cmake",
+		"F:/AsOneFile/opencv_4100/build/x64/vc16/lib/OpenCVModules-debug.cmake",
+		"F:/AsOneFile/opencv_4100/build/x64/vc16/lib/OpenCVModules-release.cmake",
 		"F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/share/cmake/Torch/TorchConfigVersion.cmake",
 		"F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/share/cmake/Torch/TorchConfig.cmake",
 		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/FindPackageHandleStandardArgs.cmake",
@@ -317,111 +317,12 @@
 		"F:/AsOneFile/libtorch-win-shared-with-deps-2.6.0+cpu/libtorch/share/cmake/Caffe2/public/mkldnn.cmake",
 		"F:/AsOneFile/libtorch-win-shared-with-deps-2.6.0+cpu/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake",
 		"F:/AsOneFile/libtorch-win-shared-with-deps-2.6.0+cpu/libtorch/share/cmake/Caffe2/Caffe2Targets-release.cmake",
-		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/GNUInstallDirs.cmake",
-		"F:/AsOneFile/mycode/QtApp/label2/resources.qrc"
+		"C:/Program Files (x86)/Microsoft Visual Studio/2019/Community/Common7/IDE/CommonExtensions/Microsoft/CMake/CMake/share/cmake-3.20/Modules/GNUInstallDirs.cmake"
 	],
 	"CMAKE_SOURCE_DIR" : "F:/AsOneFile/mycode/QtApp/label2",
 	"DEP_FILE" : "F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "label2_autogen/timestamp",
-	"HEADERS" : 
-	[
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/BinaryOptionsDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_BinaryOptionsDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/BrightnessContrastDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_BrightnessContrastDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/ConvolveDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_ConvolveDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/FilterDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_FilterDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/GaussianBlurDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_GaussianBlurDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/ScaleDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_ScaleDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/ThresholdDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_ThresholdDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/TopHatDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_TopHatDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/UnsharpMaskDialog.h",
-			"MU",
-			"2NRMJ5X7RK/moc_UnsharpMaskDialog.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/mainwindow.h",
-			"MU",
-			"EWIEGA46WW/moc_mainwindow.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/BinaryProcessor.h",
-			"MU",
-			"H2JZ4JV5OV/moc_BinaryProcessor.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/FilterProcessor.h",
-			"MU",
-			"H2JZ4JV5OV/moc_FilterProcessor.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/MyImage.h",
-			"MU",
-			"H2JZ4JV5OV/moc_MyImage.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/MyModel.h",
-			"MU",
-			"H2JZ4JV5OV/moc_MyModel.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/Shape.h",
-			"MU",
-			"H2JZ4JV5OV/moc_Shape.cpp",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/Workspace.h",
-			"MU",
-			"H2JZ4JV5OV/moc_Workspace.cpp",
-			null
-		]
-	],
+	"HEADERS" : [],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/include",
 	"MOC_COMPILATION_FILE" : "F:/AsOneFile/mycode/QtApp/label2/out/build/debug/label2_autogen/mocs_compilation.cpp",
@@ -448,7 +349,7 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"F:/AsOneFile/opencv/build/include",
+		"F:/AsOneFile/opencv_4100/build/include",
 		"F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include",
 		"F:/AsOneFile/libtorch-win-shared-with-deps-debug-2.6.0+cpu/libtorch/include/torch/csrc/api/include",
 		"F:/AsOneFile/Qt/6.6.3/msvc2019_64/include/QtCore",
@@ -481,79 +382,7 @@
 	"QT_VERSION_MAJOR" : 6,
 	"QT_VERSION_MINOR" : 6,
 	"SETTINGS_FILE" : "F:/AsOneFile/mycode/QtApp/label2/out/build/debug/CMakeFiles/label2_autogen.dir/AutogenUsed.txt",
-	"SOURCES" : 
-	[
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/BinaryOptionsDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/BrightnessContrastDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/ConvolveDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/FilterDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/GaussianBlurDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/ThresholdDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/TopHatDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/UnsharpMaskDialog.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/dialogs/scaledialog.cpp",
-			"MU",
-			null
-		],
-		[ "F:/AsOneFile/mycode/QtApp/label2/main.cpp", "MU", null ],
-		[ "F:/AsOneFile/mycode/QtApp/label2/mainwindow.cpp", "MU", null ],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/BinaryProcessor.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/FilterProcessor.cpp",
-			"MU",
-			null
-		],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/ModelProcessor.cpp",
-			"MU",
-			null
-		],
-		[ "F:/AsOneFile/mycode/QtApp/label2/processors/MyImage.cpp", "MU", null ],
-		[ "F:/AsOneFile/mycode/QtApp/label2/processors/MyModel.cpp", "MU", null ],
-		[ "F:/AsOneFile/mycode/QtApp/label2/processors/Shape.cpp", "MU", null ],
-		[
-			"F:/AsOneFile/mycode/QtApp/label2/processors/Workspace.cpp",
-			"MU",
-			null
-		]
-	],
+	"SOURCES" : [],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],
 	"UIC_SKIP" : [],
